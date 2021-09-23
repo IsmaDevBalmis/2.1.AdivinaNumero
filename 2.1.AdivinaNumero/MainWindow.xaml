@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._1.AdivinaNumero"
         mc:Ignorable="d"
-        Title="Adivina el número" Height="200" Width="600">
+        Title="Adivina el número" Height="200" Width="600"
+        Icon="assets/magnifying_glass_find_zoom_search.ico">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="55,45,0,0" TextWrapping="Wrap" Text="¿Qué número he pensado?" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Comprobar" HorizontalAlignment="Left" Margin="55,109,0,0" VerticalAlignment="Top" Width="117" Height="31"/>
+        <Button Content="Reiniciar" HorizontalAlignment="Left" Margin="221,109,0,0" VerticalAlignment="Top" Width="117" Height="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="379,48,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="141"/>
+
     </Grid>
 </Window>

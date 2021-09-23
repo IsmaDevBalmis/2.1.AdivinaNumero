@@ -24,7 +24,7 @@ namespace _2._1.AdivinaNumero
         public MainWindow()
         {
             InitializeComponent();
-             numeroGenerado = generarNumeroAleatorio();
+            numeroGenerado = generarNumeroAleatorio();
         }
 
        

@@ -20,25 +20,25 @@ namespace _2._1.AdivinaNumero
     /// </summary>
     public partial class MainWindow : Window
     {
-        int numeroGenerado;
+        private int numeroGenerado;
         public MainWindow()
         {
             InitializeComponent();
-            numeroGenerado = generarNumeroAleatorio();
+            numeroGenerado = GenerarNumeroAleatorio();
         }
 
        
 
-        private static int generarNumeroAleatorio()
+        private int GenerarNumeroAleatorio()
         {
             Random r = new Random();
-            int randomNumber = r.Next(1, 100);
+            int randomNumber = r.Next(0, 101);
             return randomNumber;
         }
 
 
 
-        private void comprobarButton_Click(object sender, RoutedEventArgs e)
+        private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
             int numeroIntroducido = int.Parse(numeroTextBox.Text);
 
@@ -59,9 +59,10 @@ namespace _2._1.AdivinaNumero
             }
         }
 
-        private void reiniciarButton_Click(object sender, RoutedEventArgs e)
+        private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
-            generarNumeroAleatorio();
+            GenerarNumeroAleatorio();
+            MessageBox.Show("Se ha reiniciado");
             respuestaTextBlock.Text = "";
             numeroTextBox.Text = "";
         }
